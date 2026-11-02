@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="Lexora AI helps people in India understand legal information, rights and possible next steps in plain language.">
+  <title>Lexora AI — Legal clarity, within reach</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <style>
+ :root{--ink:#142235;--ink-2:#1d3047;--gold:#c5a46a;--gold-2:#e1c995;--paper:#f7f6f2;--white:#fff;--muted:#73808b;--line:#e5e3dc;--serif:"Playfair Display",Georgia,serif;--sans:"DM Sans",sans-serif;--head:"Manrope",sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:85px}body{margin:0;font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.65;-webkit-font-smoothing:antialiased}a{text-decoration:none;color:inherit}button,input{font:inherit}button{cursor:pointer}.container{width:min(1160px,calc(100% - 48px));margin:auto}.section{padding:104px 0}.skip-link{position:absolute;left:-999px;top:0;background:var(--gold);padding:10px;z-index:999}.skip-link:focus{left:10px}.topline{height:31px;background:#0b1521;color:#aab4bd;display:flex;justify-content:center;align-items:center;gap:9px;font-size:9px;letter-spacing:.15em}.status-dot,.green-dot{width:6px;height:6px;border-radius:50%;background:#7cb28c;display:inline-block}.topline-divider{color:var(--gold)}.header{height:76px;position:sticky;top:0;z-index:80;background:#f7f6f2ed;backdrop-filter:blur(14px);border-bottom:1px solid #14223512}.nav-wrap{height:100%;display:flex;align-items:center;justify-content:space-between}.logo{display:flex;align-items:center;gap:10px}.logo-symbol{width:35px;height:35px;background:var(--ink);color:var(--gold-2);display:grid;place-items:center;font:600 22px var(--serif);border-radius:9px 9px 9px 2px}.logo-symbol span{color:#fff}.logo-name{font:800 15px var(--head);letter-spacing:.12em}.logo-name span{color:#a18451;margin-left:4px}.nav{display:flex;align-items:center;gap:32px;font-size:12px;color:#4e5a65}.nav>a:not(.nav-cta):hover{color:#a0804c}.nav-cta{background:var(--ink);color:#fff;padding:12px 17px;border-radius:3px}.nav-cta span{color:var(--gold-2);padding-left:8px}.nav-toggle{display:none;background:none;border:0;padding:8px}.nav-toggle i{display:block;width:22px;height:2px;background:var(--ink);margin:5px}
+.hero{background:var(--ink);color:#fff;padding:76px 0 24px;position:relative;overflow:hidden}.hero-grid-bg{position:absolute;inset:0;opacity:.18;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:70px 70px;mask-image:linear-gradient(90deg,transparent,black)}.hero:after{content:"";position:absolute;width:680px;height:680px;border:1px solid #c5a46a20;border-radius:50%;right:-250px;top:-360px}.hero-inner{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:65px;align-items:center;min-height:475px}.eyebrow{font-size:9px;font-weight:700;letter-spacing:.2em;color:var(--gold-2);margin-bottom:20px}.eyebrow-line{display:inline-block;width:25px;height:1px;background:var(--gold);vertical-align:middle;margin:0 9px 3px 0}.hero h1{font:500 clamp(42px,5vw,66px)/1.13 var(--head);letter-spacing:-2.8px;margin:0}.hero h1 em,.section h2 em,.final-cta h2 em{font-family:var(--serif);font-weight:500;color:var(--gold-2)}.hero-lead{font-size:14px;color:#bdc7d0;line-height:1.9;max-width:490px;margin:23px 0 27px}.hero-buttons{display:flex;align-items:center;gap:13px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:1px solid transparent;border-radius:3px;padding:13px 19px;font-size:11px;font-weight:700;transition:.2s}.btn-gold{background:var(--gold);color:#172538}.btn-gold:hover{background:var(--gold-2);transform:translateY(-2px)}.btn-outline{border-color:#ffffff45;color:#e6ebef}.btn-outline:hover{background:#ffffff12}.btn-outline .play{font-size:8px;color:var(--gold-2);border:1px solid #c5a46a80;border-radius:50%;width:23px;height:23px;display:grid;place-items:center}.hero-proof{display:flex;align-items:center;gap:12px;margin-top:48px}.proof-icon{width:35px;height:35px;border:1px solid #c5a46a80;border-radius:50%;display:grid;place-items:center;color:var(--gold-2);font:20px var(--serif)}.hero-proof strong,.hero-proof small{display:block}.hero-proof strong{font-size:10px;color:#f0f2f2}.hero-proof small{font-size:9px;color:#96a3ad}.hero-visual{position:relative;min-height:440px;display:grid;place-items:center}.visual-orbit{position:absolute;border:1px solid #c5a46a25;border-radius:50%;transform:rotate(-25deg)}.orbit-a{width:470px;height:280px}.orbit-b{width:390px;height:340px;transform:rotate(45deg)}.visual-card{position:relative;z-index:2;width:min(405px,100%);background:#fbfaf6;color:var(--ink);box-shadow:0 28px 80px #030a13a6;transform:rotate(-2deg);border-radius:4px;overflow:hidden}.visual-card-head{display:flex;align-items:center;gap:10px;padding:17px 20px;border-bottom:1px solid var(--line)}.mini-logo,.chat-logo{width:29px;height:29px;background:var(--ink);color:var(--gold-2);display:grid;place-items:center;border-radius:7px;font:17px var(--serif)}.visual-card-head strong,.visual-card-head small{display:block}.visual-card-head strong{font:700 11px var(--head)}.visual-card-head small{font-size:8px;color:#8a9599}.green-dot{margin-right:5px}.preview-tag{margin-left:auto;border:1px solid #d8c8a6;color:#92774a;padding:4px 7px;font-size:7px;letter-spacing:.12em}.visual-conversation{padding:21px}.visual-label{font-size:7px;font-weight:700;letter-spacing:.16em;color:#9b8357;margin-bottom:8px}.visual-user{font:16px/1.55 var(--serif);padding:0 0 0 13px;border-left:2px solid var(--gold);color:#263548}.response-label{margin-top:22px}.visual-answer{display:flex;gap:10px;background:#eeece5;padding:13px;font-size:9px;line-height:1.7;color:#596671}.answer-icon{color:#a18451}.visual-answer p{margin:0}.visual-chips{display:flex;gap:7px;margin-top:13px}.visual-chips span{font-size:8px;color:#69747b;border:1px solid #e2ded4;padding:4px 8px}.visual-card-foot{display:flex;justify-content:space-between;padding:11px 20px;border-top:1px solid var(--line);font-size:8px;color:#8b969a}.floating-note{position:absolute;z-index:3;background:#fbfaf6;color:#40505c;padding:9px 12px;box-shadow:0 8px 25px #0002;font-size:9px}.floating-note span{color:#a18451;font-weight:700;margin-right:7px}.note-one{top:25px;right:-8px}.note-two{bottom:28px;left:-10px}.decor-seal{position:absolute;bottom:0;right:4%;z-index:2;width:65px;height:65px;border:1px solid #c5a46a88;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--gold-2);font-size:6px;letter-spacing:.15em}.decor-seal b{font:21px var(--serif)}.decor-seal small{font-size:5px}.hero-bottom{position:relative;z-index:1;border-top:1px solid #ffffff20;margin-top:45px;padding-top:17px;display:flex;justify-content:space-between;gap:20px;color:#94a1ab;font-size:8px;letter-spacing:.13em}.hero-bottom div{display:flex;gap:12px;letter-spacing:0;font-size:9px}.hero-bottom i{font-style:normal;color:var(--gold)}
+.assistant-section{background:#efeee9}.assistant-layout{display:grid;grid-template-columns:.82fr 1.18fr;gap:75px;align-items:center}.dark-eyebrow{color:#9a7b48}.section h2{font:600 clamp(35px,4vw,49px)/1.18 var(--head);letter-spacing:-1.8px;color:var(--ink);margin:0}.section h2 em{color:#a18451}.section-copy>p{font-size:12px;line-height:1.9;color:var(--muted);margin:20px 0}.benefit-list{display:grid;gap:14px;margin:26px 0}.benefit-list>div{display:flex;align-items:flex-start;gap:11px}.benefit-list>div>span{width:21px;height:21px;flex:none;border-radius:50%;background:#e2d9c7;color:#876b3f;display:grid;place-items:center;font-size:11px}.benefit-list b,.benefit-list small{display:block}.benefit-list b{font-size:11px}.benefit-list small{font-size:9px;color:#7d898f;margin-top:2px}.privacy-note{display:flex;gap:10px;background:#e6e3da;padding:12px;border-left:2px solid var(--gold)}.privacy-note>span{font-weight:700;color:#96794b}.privacy-note p{font-size:9px;line-height:1.7;color:#68737a;margin:0}.privacy-note b{color:#34414b}.chat-shell{background:#fff;border:1px solid #e2dfd6;border-radius:6px;box-shadow:0 22px 60px #18253612;overflow:hidden}.chat-head{display:flex;align-items:center;justify-content:space-between;padding:16px 19px;border-bottom:1px solid #eeece6}.chat-brand{display:flex;align-items:center;gap:10px}.chat-brand b,.chat-brand small{display:block}.chat-brand b{font:700 11px var(--head)}.chat-brand small{font-size:8px;color:#8a9599}.icon-btn{width:30px;height:30px;background:white;border:1px solid #e5e2da;border-radius:4px;color:#6c7880;font-size:17px}.chat-progress{height:3px;background:#f0eee8}.chat-progress span{display:block;width:8%;height:100%;background:var(--gold);transition:width .3s}.chat-messages{height:260px;overflow-y:auto;padding:18px;background:#fbfaf7}.msg{display:flex;gap:9px;align-items:flex-start;margin-bottom:14px}.msg.user{justify-content:flex-end}.msg-avatar{width:25px;height:25px;flex:none;background:var(--ink);color:var(--gold-2);border-radius:6px;display:grid;place-items:center;font:13px var(--serif)}.msg-bubble{max-width:86%;padding:10px 13px;background:#eeece5;color:#4b5963;border-radius:2px 8px 8px 8px;font-size:10px;line-height:1.7}.msg-bubble b{color:#1b2a3b}.msg.user .msg-bubble{background:var(--ink);color:#fff;border-radius:8px 2px 8px 8px}.msg-bubble ul{padding-left:16px;margin:6px 0}.msg-bubble li{list-style:disc}.chat-suggestions{display:flex;flex-wrap:wrap;gap:6px;padding:12px 16px 5px}.chat-suggestions button{border:1px solid #e5e1d7;background:white;border-radius:30px;padding:6px 9px;font-size:8px;color:#68747b}.chat-suggestions button:hover{border-color:var(--gold);color:#987844}.chat-input-row{display:flex;margin:10px 16px 11px;border:1px solid #e1ded6;border-radius:4px;padding:4px}.chat-input-row input{flex:1;min-width:0;border:0;outline:0;padding:8px;font-size:10px}.chat-input-row button{width:32px;height:32px;border:0;background:var(--ink);color:var(--gold-2);border-radius:3px;font-size:17px}.chat-foot{text-align:center;padding:9px;border-top:1px solid #efede7;color:#969e9e;font-size:8px}.typing{display:flex;gap:4px;padding:10px}.typing i{width:5px;height:5px;border-radius:50%;background:#9da6a8;animation:bounce .8s infinite alternate}.typing i:nth-child(2){animation-delay:.2s}.typing i:nth-child(3){animation-delay:.4s}@keyframes bounce{to{transform:translateY(-4px);opacity:.4}}
+.practice-section{background:var(--paper)}.section-heading{display:flex;align-items:end;justify-content:space-between;gap:40px;margin-bottom:42px}.section-heading>p{max-width:330px;font-size:11px;line-height:1.8;color:var(--muted);margin:0 0 4px}.practice-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.practice-card{position:relative;background:#fff;border:1px solid #e9e6de;padding:24px;min-height:245px;transition:.25s}.practice-card:hover{transform:translateY(-4px);border-color:#d6c49e;box-shadow:0 14px 35px #1422350c}.practice-no{position:absolute;top:25px;right:22px;color:#b6a27c;font-size:7px;letter-spacing:.12em}.practice-icon{width:39px;height:39px;border-radius:50%;display:grid;place-items:center;background:#f0eee8;color:#9b7d4b;font-size:19px;margin-bottom:22px}.practice-card h3{font:700 14px var(--head);margin:0 0 8px}.practice-card p{font-size:10px;line-height:1.8;color:#7a858c;min-height:53px;margin:0 0 15px}.text-action{border:0;background:none;color:#987844;font-size:9px;font-weight:700;padding:0}.text-action span{margin-left:7px}
+.how-section{background:#ebe9e1}.center-heading{text-align:center;max-width:650px;margin:0 auto 48px}.center-heading .eyebrow{color:#9a7b48}.center-heading h2{font-size:44px}.center-heading p{font-size:11px;color:var(--muted);margin-top:13px}.steps-grid{display:grid;grid-template-columns:1fr 30px 1fr 30px 1fr;gap:13px;align-items:center}.step-card{position:relative;background:#f9f8f3;border:1px solid #e3dfd4;padding:24px;min-height:205px}.step-number{position:absolute;right:19px;top:18px;color:#b39a6d;font:12px var(--serif)}.step-symbol{width:38px;height:38px;background:var(--ink);color:var(--gold-2);display:grid;place-items:center;border-radius:50%;font-size:17px}.step-card h3{font:700 13px var(--head);margin:25px 0 7px}.step-card p{font-size:10px;line-height:1.8;color:#7b868c;margin:0}.step-arrow{text-align:center;color:#b2945d;font-size:18px}
+.sample-section{background:var(--ink);color:#fff}.sample-layout{display:grid;grid-template-columns:.85fr 1.15fr;gap:75px;align-items:center}.sample-layout h2{color:#fff}.sample-layout>div:first-child>p{max-width:390px;color:#aeb9c2;font-size:11px;line-height:1.9;margin:20px 0 25px}.summary-card{background:#f8f7f2;color:var(--ink);padding:25px 27px;box-shadow:0 20px 60px #0003}.summary-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:17px}.summary-top small{font-size:7px;letter-spacing:.14em;color:#9b8051}.summary-top h3{font:700 16px var(--head);margin:5px 0}.sample-pill{font-size:7px;color:#947849;border:1px solid #d9c9a8;padding:5px 7px;letter-spacing:.1em}.summary-row{display:flex;justify-content:space-between;gap:15px;border-top:1px solid #e5e2da;padding:11px 0;font-size:9px}.summary-row span{color:#879197}.summary-row b{text-align:right;font-size:9px}.summary-group{border-top:1px solid #e5e2da;padding:14px 0}.summary-group>small{display:block;color:#9a8053;font-size:7px;letter-spacing:.13em;font-weight:700;margin-bottom:9px}.summary-chip{display:inline-block;background:#eeece5;padding:6px 8px;margin:0 4px 4px 0;font-size:8px;color:#5e6a71}.summary-group ul{padding-left:16px;margin:0;font-size:9px;line-height:2;color:#6c777e}.summary-group li{list-style:disc}.summary-caution{background:#eee8db;border-left:2px solid var(--gold);padding:10px;font-size:8px;line-height:1.7;color:#76684e}
+.lawyers-section{background:var(--paper)}.lawyer-toolbar{display:flex;justify-content:space-between;align-items:center;gap:15px;border-bottom:1px solid var(--line);padding-bottom:15px;margin-bottom:17px;font-size:10px;color:#748087}.lawyer-filters{display:flex;gap:6px;flex-wrap:wrap}.lawyer-filters button{background:#fff;border:1px solid #e3e0d8;border-radius:20px;padding:6px 12px;font-size:9px;color:#68747b}.lawyer-filters button.selected{background:var(--ink);border-color:var(--ink);color:white}.lawyer-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:11px}.lawyer-card{display:flex;align-items:center;gap:12px;background:white;border:1px solid #eae7df;padding:15px}.lawyer-avatar{width:43px;height:43px;border-radius:50%;display:grid;place-items:center;flex:none;font:700 11px var(--head)}.avatar-1{background:#e8dfcf;color:#775e39}.avatar-2{background:#dce5e1;color:#49645b}.avatar-3{background:#eadbd8;color:#835b55}.avatar-4{background:#dfe2ed;color:#58627e}.lawyer-details{flex:1;min-width:0}.lawyer-details small{font-size:7px;color:#9b8051;letter-spacing:.13em;font-weight:700}.lawyer-details h3{font:700 11px var(--head);margin:2px 0}.lawyer-details p{font-size:9px;color:#77838a;margin:0}.lawyer-details span{font-size:7px;color:#a0a5a4}.enquire-btn{border:1px solid #e2ded4;background:white;padding:7px 9px;color:#947747;font-size:8px}.enquire-btn:hover{background:var(--ink);color:#fff}.lawyer-note{text-align:center;color:#9aa1a1;font-size:8px;margin:15px 0 0}
+.faq-section{background:#efeee9}.faq-layout{display:grid;grid-template-columns:.75fr 1.25fr;gap:80px}.faq-layout>div:first-child>p{font-size:11px;color:var(--muted);max-width:260px;margin-top:15px}.faq-list{border-top:1px solid #dcd9d0}.faq-list details{border-bottom:1px solid #dcd9d0;padding:17px 0}.faq-list summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;font:700 11px var(--head);color:var(--ink)}.faq-list summary::-webkit-details-marker{display:none}.faq-list summary:after{content:"+";font:18px var(--sans);color:#a18451}.faq-list details[open] summary:after{content:"−"}.faq-list details p{font-size:10px;line-height:1.8;color:#758087;padding:10px 25px 0 0;margin:0}
+.final-cta{background:#b99a67;padding:57px 0}.final-cta-inner{display:flex;align-items:center;justify-content:space-between;gap:30px}.final-cta .eyebrow{color:#5d4b30;margin-bottom:10px}.final-cta h2{font:600 clamp(28px,3.5vw,40px)/1.2 var(--head);letter-spacing:-1.4px;color:var(--ink);margin:0}.final-cta h2 em{color:#fff7e6}.final-cta p{font-size:10px;color:#55472e;margin:9px 0 0}.btn-light{background:var(--ink);color:#fff;white-space:nowrap}.btn-light span{color:var(--gold-2)}.btn-light:hover{background:#263b51}
+.footer{background:#0b1521;color:#bdc6cc;padding:48px 0 18px}.footer-main{display:flex;justify-content:space-between;gap:40px;padding-bottom:34px}.footer-logo .logo-name{color:#fff}.footer-main>div:first-child>p{font-size:9px;line-height:1.8;color:#82909b;margin:14px 0 0}.footer-links{display:flex;gap:70px}.footer-links>div{display:flex;flex-direction:column;gap:9px;font-size:9px}.footer-links b{color:var(--gold-2);font-size:9px;margin-bottom:3px}.footer-links a{color:#98a5ae}.footer-links a:hover{color:white}.footer-bottom{border-top:1px solid #ffffff1c;padding-top:15px;display:flex;justify-content:space-between;gap:35px;font-size:8px;color:#7f8c96}.footer-bottom p{max-width:740px;line-height:1.8;margin:0}.footer-bottom b{color:#c3aa7d}
+.modal-backdrop{display:none;position:fixed;inset:0;background:#07111dcc;z-index:200;place-items:center;padding:20px}.modal-backdrop.show{display:grid}.modal-card{position:relative;background:#faf9f5;max-width:380px;width:100%;padding:35px;text-align:center;box-shadow:0 25px 80px #0005}.modal-x{position:absolute;right:13px;top:8px;background:none;border:0;font-size:24px;color:#69757d}.modal-mark{width:45px;height:45px;border-radius:50%;background:var(--ink);color:var(--gold-2);display:grid;place-items:center;margin:0 auto 14px;font:23px var(--serif)}.modal-card h3{font:700 17px var(--head);margin:0 0 10px}.modal-card p{font-size:10px;color:#77838a;line-height:1.8;margin:0 0 18px}.toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:var(--ink);color:white;padding:10px 15px;border-radius:3px;font-size:9px;z-index:300;transition:.2s}.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:900px){.hero-inner{gap:30px}.assistant-layout,.sample-layout{gap:38px}.faq-layout{gap:40px}.nav{gap:18px}.practice-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.container{width:calc(100% - 34px)}.header{height:67px}.nav-toggle{display:block}.nav{display:none;position:absolute;top:67px;left:0;right:0;background:var(--paper);padding:15px 22px 22px;border-bottom:1px solid var(--line);box-shadow:0 15px 25px #0001;flex-direction:column;align-items:stretch;gap:0}.nav.open{display:flex}.nav>a{padding:12px 0;border-bottom:1px solid var(--line)}.nav .nav-cta{text-align:center;margin-top:10px;border:0}.hero{padding:57px 0 22px}.hero-inner{grid-template-columns:1fr;gap:22px}.hero h1{font-size:46px}.hero-lead{font-size:12px}.hero-visual{min-height:365px}.visual-card{max-width:370px}.orbit-a{width:390px}.orbit-b{width:340px}.note-one{right:0;top:9px}.note-two{left:0;bottom:9px}.decor-seal{right:0;bottom:-5px}.hero-bottom{display:block;line-height:2.5;margin-top:30px}.hero-bottom div{flex-wrap:wrap;gap:8px}.section{padding:72px 0}.assistant-layout,.sample-layout,.faq-layout{grid-template-columns:1fr;gap:32px}.section h2{font-size:38px}.chat-messages{height:245px}.section-heading{display:block}.section-heading>p{margin-top:15px}.practice-grid{grid-template-columns:repeat(2,1fr)}.practice-card{padding:18px;min-height:250px}.steps-grid{grid-template-columns:1fr;gap:9px}.step-card{min-height:0}.step-arrow{transform:rotate(90deg)}.center-heading h2{font-size:37px}.summary-card{padding:20px 17px}.lawyer-toolbar{align-items:flex-start;flex-direction:column}.lawyer-grid{grid-template-columns:1fr}.final-cta-inner{align-items:flex-start;flex-direction:column}.footer-main{flex-direction:column}.footer-links{gap:45px}.footer-bottom{flex-direction:column;gap:10px}}
+@media(max-width:420px){.topline{font-size:7px;letter-spacing:.1em}.hero h1{font-size:39px}.hero-buttons{gap:8px}.btn{padding:12px 14px;font-size:10px}.practice-grid{grid-template-columns:1fr}.practice-card{min-height:220px}.hero-visual{min-height:340px}.visual-card{padding:0}.floating-note{font-size:8px}.lawyer-card{gap:8px;padding:11px}.lawyer-avatar{width:36px;height:36px}.lawyer-details h3{font-size:10px}.enquire-btn{padding:6px}.footer-links{gap:22px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="topline"><span class="status-dot"></span> INDIA-FOCUSED LEGAL INFORMATION PLATFORM <span class="topline-divider">/</span> BUILT FOR EVERYONE</div>
+  <header class="header" id="top">
+    <div class="container nav-wrap">
+      <a class="logo" href="#top" aria-label="Lexora AI home"><span class="logo-symbol">L<span>.</span></span><span class="logo-name">LEXORA<span>AI</span></span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open navigation" aria-expanded="false"><i></i><i></i><i></i></button>
+      <nav class="nav" id="mainNav">
+        <a href="#how">How it works</a><a href="#practice">Practice areas</a><a href="#lawyers">Legal professionals</a><a href="#faq">FAQs</a>
+        <a class="nav-cta" href="#assistant">Ask Lexora <span>↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-grid-bg"></div>
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <div class="eyebrow"><span class="eyebrow-line"></span> A SMARTER FIRST STEP TOWARDS LEGAL CLARITY</div>
+          <h1>Understand your rights.<br><em>Know your options.</em></h1>
+          <p class="hero-lead">Legal questions can be complicated. Getting started shouldn't be. Explain your situation in everyday language and explore relevant legal information and practical next steps.</p>
+          <div class="hero-buttons"><a href="#assistant" class="btn btn-gold">Explore your situation <span>↗</span></a><a href="#how" class="btn btn-outline"><span class="play">▶</span> See how it works</a></div>
+          <div class="hero-proof"><div class="proof-icon">§</div><div><strong>Legal information, made understandable.</strong><small>Designed with the Indian legal context in mind</small></div></div>
+        </div>
+        <div class="hero-visual">
+          <div class="visual-orbit orbit-a"></div><div class="visual-orbit orbit-b"></div>
+          <div class="visual-card">
+            <div class="visual-card-head"><div class="mini-logo">L</div><div><strong>Lexora Assistant</strong><small><span class="green-dot"></span> Interactive preview</small></div><span class="preview-tag">PREVIEW</span></div>
+            <div class="visual-conversation"><div class="visual-label">YOUR QUESTION</div><div class="visual-user">My employer has not paid my salary for two months. What can I do?</div><div class="visual-label response-label">LEXORA'S APPROACH</div><div class="visual-answer"><span class="answer-icon">✦</span><p>Let's understand the facts first. Your role, employment terms and payment records may affect which legal options are relevant.</p></div><div class="visual-chips"><span>Employment</span><span>Wages</span><span>Next steps</span></div></div>
+            <div class="visual-card-foot"><span>✦ Guided legal information</span><span>Not legal advice</span></div>
+          </div>
+          <div class="floating-note note-one"><span>01</span> Understand the issue</div><div class="floating-note note-two"><span>02</span> Explore possible next steps</div>
+          <div class="decor-seal"><span>LEXORA</span><b>§</b><small>LEGAL CLARITY</small></div>
+        </div>
+      </div>
+      <div class="container hero-bottom"><span>EXPLORE COMMON LEGAL CONCERNS</span><div><span>Employment</span><i>·</i><span>Consumer</span><i>·</i><span>Property</span><i>·</i><span>Cybercrime</span><i>·</i><span>Family</span></div></div>
+    </section>
+
+    <section class="assistant-section section" id="assistant">
+      <div class="container assistant-layout">
+        <div class="section-copy">
+          <div class="eyebrow dark-eyebrow">START WITH WHAT HAPPENED</div>
+          <h2>Tell us the situation.<br><em>We'll help you organise it.</em></h2>
+          <p>Start with a short description. The interactive preview will ask a relevant follow-up question and create a sample issue summary to help you prepare for professional advice.</p>
+          <div class="benefit-list"><div><span>✓</span><p><b>Plain-language experience</b><small>No legal terminology needed to get started</small></p></div><div><span>✓</span><p><b>Structured follow-up</b><small>Identify facts and documents that may matter</small></p></div><div><span>✓</span><p><b>Practical preparation</b><small>Organise questions before speaking to a lawyer</small></p></div></div>
+          <div class="privacy-note"><span>!</span><p><b>Demo safety:</b> Do not enter names, addresses, account numbers or confidential case details. This preview runs in your browser and does not submit your text to a server.</p></div>
+        </div>
+        <div class="chat-shell">
+          <div class="chat-head"><div class="chat-brand"><div class="chat-logo">L</div><div><b>Lexora AI</b><small><span class="green-dot"></span> Interactive demo</small></div></div><button class="icon-btn" id="resetChat" title="Restart conversation" aria-label="Restart conversation">↻</button></div>
+          <div class="chat-progress"><span id="progressFill"></span></div>
+          <div class="chat-messages" id="chatMessages" aria-live="polite">
+            <div class="msg assistant"><div class="msg-avatar">L</div><div class="msg-bubble"><b>Welcome to Lexora.</b><br>Briefly describe the legal issue you're facing. I'll ask a few questions to help organise the situation.</div></div>
+          </div>
+          <div class="chat-suggestions" id="chatSuggestions">
+            <button data-example="My employer has not paid my salary for two months.">Unpaid salary</button>
+            <button data-example="I lost money in an online payment fraud.">Online fraud</button>
+            <button data-example="My landlord is refusing to return my security deposit.">Rental deposit</button>
+            <button data-example="A company is refusing to refund a defective product.">Refund issue</button>
+          </div>
+          <form class="chat-input-row" id="chatForm"><input id="chatInput" type="text" maxlength="700" placeholder="Describe what happened..." autocomplete="off" aria-label="Describe your legal issue"><button type="submit" aria-label="Send message">↑</button></form>
+          <div class="chat-foot">General legal information only · Not a substitute for an advocate</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section practice-section" id="practice">
+      <div class="container">
+        <div class="section-heading"><div><div class="eyebrow dark-eyebrow">AREAS OF LAW</div><h2>Start with the issue.<br><em>Find a clearer direction.</em></h2></div><p>Explore common areas where people may need legal information. The applicable law depends on facts, location and current legislation.</p></div>
+        <div class="practice-grid">
+          <article class="practice-card"><span class="practice-no">01 / CIVIL</span><div class="practice-icon">⌂</div><h3>Property & tenancy</h3><p>Rental deposits, ownership, agreements, possession and property disputes.</p><button class="text-action" data-practice="I have a property or tenancy issue.">Explore this area <span>↗</span></button></article>
+          <article class="practice-card"><span class="practice-no">02 / WORK</span><div class="practice-icon">▤</div><h3>Employment & wages</h3><p>Unpaid salary, termination, workplace concerns and employment terms.</p><button class="text-action" data-practice="I have an employment or unpaid salary issue.">Explore this area <span>↗</span></button></article>
+          <article class="practice-card"><span class="practice-no">03 / DIGITAL</span><div class="practice-icon">⌁</div><h3>Cybercrime & fraud</h3><p>Digital payment fraud, online scams, identity misuse and cyber complaints.</p><button class="text-action" data-practice="I need information about an online fraud or cybercrime.">Explore this area <span>↗</span></button></article>
+          <article class="practice-card"><span class="practice-no">04 / CONSUMER</span><div class="practice-icon">◇</div><h3>Consumer protection</h3><p>Defective products, deficient services, refunds and consumer grievances.</p><button class="text-action" data-practice="I have a consumer complaint about a product or service.">Explore this area <span>↗</span></button></article>
+          <article class="practice-card"><span class="practice-no">05 / CRIMINAL</span><div class="practice-icon">⚖</div><h3>Criminal matters</h3><p>General information about procedures, legal rights and seeking assistance.</p><button class="text-action" data-practice="I need general information about a criminal law matter.">Explore this area <span>↗</span></button></article>
+          <article class="practice-card"><span class="practice-no">06 / FAMILY</span><div class="practice-icon">♡</div><h3>Family matters</h3><p>General information on family disputes, maintenance and related processes.</p><button class="text-action" data-practice="I have a family law-related question.">Explore this area <span>↗</span></button></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section how-section" id="how">
+      <div class="container"><div class="center-heading"><div class="eyebrow">A GUIDED FIRST STEP</div><h2>From uncertainty to <em>understanding.</em></h2><p>A simple process to help you organise the facts and prepare for the next conversation.</p></div>
+        <div class="steps-grid"><article class="step-card"><div class="step-number">01</div><div class="step-symbol">✎</div><h3>Describe your situation</h3><p>Explain what happened in your own words. Start with the facts you know.</p></article><div class="step-arrow">→</div><article class="step-card"><div class="step-number">02</div><div class="step-symbol">⌕</div><h3>Explore legal information</h3><p>Identify possible legal topics, questions and documents that may be relevant.</p></article><div class="step-arrow">→</div><article class="step-card"><div class="step-number">03</div><div class="step-symbol">↗</div><h3>Prepare your next step</h3><p>Organise the issue and decide whether to consult a qualified advocate.</p></article></div>
+      </div>
+    </section>
+
+    <section class="section sample-section">
+      <div class="container sample-layout"><div><div class="eyebrow">A MORE ORGANISED VIEW</div><h2>Know what to ask.<br><em>Know what to keep.</em></h2><p>A structured issue summary can help you prepare for a legal consultation. The example shown here is illustrative, not an assessment of any real case.</p><a href="#assistant" class="btn btn-gold">Try the interactive demo <span>↗</span></a></div>
+        <div class="summary-card"><div class="summary-top"><div><small>LEXORA AI / EXAMPLE OUTPUT</small><h3>Preliminary issue summary</h3></div><span class="sample-pill">SAMPLE</span></div><div class="summary-row"><span>Issue category</span><b>Employment / wages</b></div><div class="summary-row"><span>Facts to clarify</span><b>Role, contract, unpaid period</b></div><div class="summary-group"><small>POTENTIALLY RELEVANT MATERIAL</small><span class="summary-chip">Employment terms</span><span class="summary-chip">Wage records</span><span class="summary-chip">Applicable labour law</span></div><div class="summary-group"><small>DOCUMENTS TO ORGANISE</small><ul><li>Appointment letter or contract</li><li>Payslips and bank statements</li><li>Written communication about payment</li></ul></div><div class="summary-caution">The applicable legal route depends on your facts, employment status, location and current law. Confirm with a qualified advocate.</div></div>
+      </div>
+    </section>
+
+    <section class="section lawyers-section" id="lawyers"><div class="container"><div class="section-heading"><div><div class="eyebrow dark-eyebrow">WHEN HUMAN GUIDANCE IS NEEDED</div><h2>Some matters need a <em>qualified advocate.</em></h2></div><p>AI can help organise questions. A qualified legal professional can assess the facts and advise on your specific matter.</p></div>
+      <div class="lawyer-toolbar"><span>Browse practice areas</span><div class="lawyer-filters" id="lawyerFilters"><button class="selected" data-filter="all">All</button><button data-filter="civil">Civil</button><button data-filter="criminal">Criminal</button><button data-filter="consumer">Consumer</button><button data-filter="corporate">Corporate</button></div></div>
+      <div class="lawyer-grid" id="lawyerGrid">
+        <article class="lawyer-card" data-category="civil"><div class="lawyer-avatar avatar-1">AS</div><div class="lawyer-details"><small>CIVIL & PROPERTY</small><h3>Advocate A. Sharma</h3><p>Property and civil matters</p><span>Illustrative profile — not verified</span></div><button class="enquire-btn" data-lawyer="Advocate A. Sharma">Details ↗</button></article>
+        <article class="lawyer-card" data-category="criminal"><div class="lawyer-avatar avatar-2">RK</div><div class="lawyer-details"><small>CRIMINAL LAW</small><h3>Advocate R. Khan</h3><p>Criminal procedure and defence</p><span>Illustrative profile — not verified</span></div><button class="enquire-btn" data-lawyer="Advocate R. Khan">Details ↗</button></article>
+        <article class="lawyer-card" data-category="consumer"><div class="lawyer-avatar avatar-3">PM</div><div class="lawyer-details"><small>CONSUMER LAW</small><h3>Advocate P. Mehta</h3><p>Consumer disputes and claims</p><span>Illustrative profile — not verified</span></div><button class="enquire-btn" data-lawyer="Advocate P. Mehta">Details ↗</button></article>
+        <article class="lawyer-card" data-category="corporate"><div class="lawyer-avatar avatar-4">ND</div><div class="lawyer-details"><small>CORPORATE LAW</small><h3>Advocate N. Das</h3><p>Business and contract matters</p><span>Illustrative profile — not verified</span></div><button class="enquire-btn" data-lawyer="Advocate N. Das">Details ↗</button></article>
+      </div><p class="lawyer-note">These profiles are fictional UI examples. No real advocate directory, endorsement or referral service is currently connected.</p>
+    </div></section>
+
+    <section class="section faq-section" id="faq"><div class="container faq-layout"><div><div class="eyebrow dark-eyebrow">IMPORTANT INFORMATION</div><h2>Frequently asked <em>questions.</em></h2><p>Understand what this platform can — and cannot — do.</p></div><div class="faq-list">
+      <details open><summary>Does Lexora AI provide legal advice?</summary><p>No. The platform is designed to provide general legal information and help users organise their concerns. It does not replace advice from a qualified advocate or create an advocate-client relationship.</p></details>
+      <details><summary>Can it predict whether I will win my case?</summary><p>No. Legal outcomes depend on evidence, applicable law, procedure and judicial assessment. Lexora should not claim to predict verdicts, sentences, bail outcomes or case success.</p></details>
+      <details><summary>Is my information private?</summary><p>This frontend demo processes the chat locally in your browser and does not send it to a backend. A production service would need a clear privacy notice, secure processing, access controls, retention rules and appropriate consent.</p></details>
+      <details><summary>Are the lawyer profiles real?</summary><p>No. Profiles in this prototype are fictional examples used to demonstrate the interface. A live directory would require verification and a legally compliant operating model.</p></details>
+      <details><summary>Which laws does Lexora cover?</summary><p>This prototype does not contain a verified legal database. A production version should retrieve current legislation and judgments from authoritative sources and show citations with relevant dates.</p></details>
+    </div></div></section>
+
+    <section class="final-cta"><div class="container final-cta-inner"><div><div class="eyebrow">YOUR FIRST STEP STARTS HERE</div><h2>Clarity begins with <em>the right question.</em></h2><p>Use the interactive preview to organise your legal concern.</p></div><a href="#assistant" class="btn btn-light">Ask Lexora <span>↗</span></a></div></section>
+  </main>
+
+  <footer class="footer"><div class="container"><div class="footer-main"><div><a class="logo footer-logo" href="#top"><span class="logo-symbol">L<span>.</span></span><span class="logo-name">LEXORA<span>AI</span></span></a><p>Legal clarity, within reach.<br>Making legal information easier to understand.</p></div><div class="footer-links"><div><b>Explore</b><a href="#how">How it works</a><a href="#practice">Practice areas</a><a href="#lawyers">Legal professionals</a></div><div><b>Information</b><a href="#faq">FAQs</a><a href="#disclaimer">Disclaimer</a><a href="mailto:hello@lexora.ai">Contact</a></div></div></div><div class="footer-bottom" id="disclaimer"><span>© <span id="year"></span> Lexora AI. All rights reserved.</span><p><b>Disclaimer:</b> Lexora AI is an informational prototype, not a law firm or legal practitioner. It does not provide legal advice. Information may be incomplete or outdated. For advice about your circumstances, consult a qualified advocate. In an emergency, contact the appropriate authorities.</p></div></div></footer>
+
+  <div class="modal-backdrop" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-card"><button class="modal-x" id="modalClose" aria-label="Close dialog">×</button><div class="modal-mark">§</div><h3 id="modalTitle">Lawyer profile preview</h3><p id="modalMessage">This is a demonstration profile only.</p><button class="btn btn-gold" id="modalOk">Understood</button></div></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script>
+const $ = (selector, scope = document) => scope.querySelector(selector);
+const $$ = (selector, scope = document) => [...scope.querySelectorAll(selector)];
+
+$("#year").textContent = new Date().getFullYear();
+
+// Responsive navigation
+const navToggle = $("#navToggle");
+const mainNav = $("#mainNav");
+navToggle.addEventListener("click", () => {
+  const open = mainNav.classList.toggle("open");
+  navToggle.setAttribute("aria-expanded", String(open));
+  navToggle.setAttribute("aria-label", open ? "Close navigation" : "Open navigation");
+});
+$$(".nav a").forEach(link => link.addEventListener("click", () => {
+  mainNav.classList.remove("open");
+  navToggle.setAttribute("aria-expanded", "false");
+}));
+
+// Frontend-only guided legal-information demo. No API calls are made.
+const chatMessages = $("#chatMessages");
+const chatForm = $("#chatForm");
+const chatInput = $("#chatInput");
+const suggestions = $("#chatSuggestions");
+const progressFill = $("#progressFill");
+let conversation = [];
+let currentFlow = null;
+let flowStep = 0;
+
+const flows = [
+  {
+    id: "employment", terms: ["salary", "employer", "wage", "job", "work", "termination", "fired"],
+    category: "Employment / wages",
+    questions: [
+      { q: "Which state or Union Territory did this happen in?", hint: "For example: Uttar Pradesh, Delhi or Maharashtra." },
+      { q: "Are you currently employed there, or has your employment ended?", hint: "You can answer in a few words." },
+      { q: "What records do you have?", hint: "For example: appointment letter, payslips, bank entries or messages." }
+    ],
+    documents: ["Appointment letter or employment agreement", "Payslips and bank statements", "Written communication about pending wages"],
+    next: ["Prepare a dated timeline of the unpaid period.", "Keep copies of employment and payment records.", "Ask a qualified advocate which labour law and forum apply to your role and establishment."]
+  },
+  {
+    id: "cyber", terms: ["fraud", "scam", "upi", "cyber", "online payment", "cheated", "transfer"],
+    category: "Cybercrime / financial fraud",
+    questions: [
+      { q: "When did you notice the transaction or fraud?", hint: "An approximate date and time are enough. Do not share account numbers." },
+      { q: "Have you already informed your bank or payment provider?", hint: "Answer yes, no or not sure." },
+      { q: "Do you have a transaction reference, complaint number or screenshots saved?", hint: "Do not paste sensitive numbers here." }
+    ],
+    documents: ["Transaction confirmation and reference details (store securely)", "Bank/payment provider complaint reference", "Screenshots, messages and relevant call details"],
+    next: ["Contact your bank/payment provider immediately to report and attempt to secure the account.", "For a financial cyber fraud in India, report promptly via the official National Cyber Crime Reporting Portal or helpline 1930.", "Preserve evidence and note the complaint reference. Do not share OTPs, PINs or passwords."]
+  },
+  {
+    id: "property", terms: ["landlord", "tenant", "rent", "deposit", "property", "house", "flat", "owner"],
+    category: "Property / tenancy",
+    questions: [
+      { q: "In which state is the property located?", hint: "State-specific rules may apply." },
+      { q: "Do you have a written rent or property agreement?", hint: "Answer yes, no or not sure." },
+      { q: "What is the main issue: deposit, rent, repairs, possession or ownership?", hint: "Choose the closest description." }
+    ],
+    documents: ["Rent / property agreement and any addenda", "Rent, deposit and maintenance payment records", "Written messages, notices and photographs relevant to the dispute"],
+    next: ["Create a timeline of payments and communications.", "Keep the agreement and proof of payment together.", "Have a qualified local advocate review the agreement and applicable state law before sending a formal notice."]
+  },
+  {
+    id: "consumer", terms: ["refund", "consumer", "product", "seller", "defective", "purchase", "service", "replacement"],
+    category: "Consumer protection",
+    questions: [
+      { q: "What product or service is the complaint about?", hint: "A short description is enough." },
+      { q: "When did you purchase it or raise the complaint?", hint: "An approximate date is fine." },
+      { q: "Do you have an invoice, order confirmation or complaint reference?", hint: "Answer yes, no or not sure." }
+    ],
+    documents: ["Invoice, order confirmation or proof of payment", "Warranty / service terms and product photographs", "Complaint emails, chat records and ticket numbers"],
+    next: ["Keep the invoice, warranty and all complaint records.", "Raise or follow up through the seller's official grievance channel in writing.", "If unresolved, review the official consumer grievance options or consult a qualified professional."]
+  }
+];
+
+const generalFlow = {
+  id: "general", category: "General legal query",
+  questions: [
+    { q: "Which state or Union Territory is this matter connected to?", hint: "The location can affect applicable law and procedure." },
+    { q: "When did the issue begin, approximately?", hint: "A month and year are enough." },
+    { q: "What outcome are you hoping to understand or achieve?", hint: "For example: refund, safety, resolving a dispute or understanding a notice." }
+  ],
+  documents: ["Any agreement, notice or official communication", "Relevant payment or transaction records", "A dated timeline and names of institutions involved (keep personal details private)"],
+  next: ["Write a short timeline of events.", "Keep original documents safe and make working copies.", "Consult a qualified advocate for advice based on the complete facts."]
+};
+
+function addMessage(text, type = "assistant", options = {}) {
+  const row = document.createElement("div");
+  row.className = `msg ${type}`;
+  if (type === "assistant") {
+    const avatar = document.createElement("div");
+    avatar.className = "msg-avatar";
+    avatar.textContent = "L";
+    row.appendChild(avatar);
+  }
+  const bubble = document.createElement("div");
+  bubble.className = "msg-bubble";
+  if (options.html) bubble.innerHTML = options.html;
+  else bubble.textContent = text;
+  row.appendChild(bubble);
+  chatMessages.appendChild(row);
+  chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+function showTyping() {
+  const row = document.createElement("div");
+  row.className = "msg assistant";
+  row.id = "typingIndicator";
+  row.innerHTML = '<div class="msg-avatar">L</div><div class="msg-bubble typing"><i></i><i></i><i></i></div>';
+  chatMessages.appendChild(row);
+  chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+function removeTyping() { $("#typingIndicator")?.remove(); }
+function updateProgress() {
+  const total = currentFlow ? currentFlow.questions.length + 1 : 4;
+  const done = currentFlow ? Math.min(flowStep, total) : 0;
+  progressFill.style.width = `${Math.max(8, (done / total) * 100)}%`;
+}
+function findFlow(text) {
+  const normalized = text.toLowerCase();
+  return flows.find(flow => flow.terms.some(term => normalized.includes(term))) || generalFlow;
+}
+function addSummary() {
+  const flow = currentFlow;
+  const docs = flow.documents.map(item => `<li>${escapeHTML(item)}</li>`).join("");
+  const next = flow.next.map(item => `<li>${escapeHTML(item)}</li>`).join("");
+  addMessage("", "assistant", { html: `
+    <b>Preliminary issue summary</b><br>
+    <b>Possible area:</b> ${escapeHTML(flow.category)}<br>
+    <b>Your answers:</b><ul>${conversation.map((answer, i) => `<li><b>${i + 1}.</b> ${escapeHTML(answer)}</li>`).join("")}</ul>
+    <b>Documents to organise:</b><ul>${docs}</ul>
+    <b>Possible preparation steps:</b><ul>${next}</ul>
+    <p><b>Important:</b> This is a simulated organisational summary, not legal research or advice. No statutory provision has been verified for your facts.</p>
+  `});
+  addMessage("You can restart the demo to explore another issue. For a real assessment, take your documents and this timeline to a qualified advocate.");
+  progressFill.style.width = "100%";
+}
+function startFlow(text) {
+  currentFlow = findFlow(text);
+  conversation = [text];
+  flowStep = 0;
+  suggestions.hidden = true;
+  addMessage(`I have grouped this as: ${currentFlow.category}. I'll ask three short questions to help organise the facts.`);
+  askNext();
+}
+function askNext() {
+  if (flowStep >= currentFlow.questions.length) {
+    addSummary();
+    return;
+  }
+  const question = currentFlow.questions[flowStep];
+  addMessage(`${question.q} ${question.hint}`);
+  updateProgress();
+}
+function handleInput(value) {
+  const text = value.trim();
+  if (!text) return;
+  addMessage(text, "user");
+  chatInput.value = "";
+  if (!currentFlow) {
+    showTyping();
+    window.setTimeout(() => {
+      removeTyping();
+      startFlow(text);
+    }, 350);
+    return;
+  }
+  conversation.push(text);
+  flowStep += 1;
+  showTyping();
+  window.setTimeout(() => {
+    removeTyping();
+    askNext();
+  }, 300);
+}
+chatForm.addEventListener("submit", event => {
+  event.preventDefault();
+  handleInput(chatInput.value);
+});
+$$("[data-example]").forEach(button => button.addEventListener("click", () => handleInput(button.dataset.example)));
+$$("[data-practice]").forEach(button => button.addEventListener("click", () => {
+  handleInput(button.dataset.practice);
+  $("#assistant").scrollIntoView({ behavior: "smooth" });
+}));
+$("#resetChat").addEventListener("click", () => {
+  chatMessages.innerHTML = "";
+  currentFlow = null;
+  conversation = [];
+  flowStep = 0;
+  suggestions.hidden = false;
+  progressFill.style.width = "8%";
+  addMessage("Welcome to Lexora. Briefly describe the legal issue you're facing. I'll ask a few questions to help organise the situation.");
+  chatInput.focus();
+});
+
+// Lawyer practice-area filters
+const filterButtons = $$("#lawyerFilters button");
+const lawyerCards = $$("#lawyerGrid .lawyer-card");
+filterButtons.forEach(button => button.addEventListener("click", () => {
+  filterButtons.forEach(item => item.classList.remove("selected"));
+  button.classList.add("selected");
+  const filter = button.dataset.filter;
+  lawyerCards.forEach(card => {
+    card.hidden = filter !== "all" && card.dataset.category !== filter;
+  });
+}));
+
+// Fictional profile information modal
+const modal = $("#modal");
+function openModal(name) {
+  $("#modalMessage").textContent = `${name} is a fictional demonstration profile. No real lawyer profile, verification, booking or enquiry service is connected to this prototype.`;
+  modal.classList.add("show");
+  $("#modalOk").focus();
+}
+function closeModal() { modal.classList.remove("show"); }
+$$(".enquire-btn").forEach(button => button.addEventListener("click", () => openModal(button.dataset.lawyer)));
+$("#modalClose").addEventListener("click", closeModal);
+$("#modalOk").addEventListener("click", closeModal);
+modal.addEventListener("click", event => { if (event.target === modal) closeModal(); });
+document.addEventListener("keydown", event => { if (event.key === "Escape") closeModal(); });
+
+
+function escapeHTML(value) {
+  return String(value).replace(/[&<>"']/g, char => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;"
+  }[char]));
+}
+
+</script>
+</body>
+</html>
